@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script_second.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body class="second-body ">
+    <div class="second-body-container">
+        <div class="main-container">
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+                <span id="mic-control" class="playing">
+                    <i id="volume-on" class="fas fa-volume-up"></i>
+                    <i id="volume-off" class="fa-solid fa-volume-xmark"></i>
+                </span>
+            </div>
+            <div class="question-no-container">
+                <div class="question-no">0<span class="current-question">1</span><span class="question-slash">/</span><span class="total-question">30</span></div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-content">
+                    <p class="question-text">Inside which HTML element do we put the JavaScript?</p> 
+                </div>
+            </div>
+
+            <div class="timer-main-container">
+                <div class="timer-container">
+                    <div class="timer">00:<span class="time-seconds">30</span></div>
+                </div>
+            </div>
+
+            <div class="options-main-container">
+                <div class="options-container">
+                    <div class="option-1 options">option-1</div>
+                    <div class="option-2 options">option-2</div>
+                    <div class="option-3 options">option-3</div>
+                    <div class="option-4 options">option-4</div>
+                </div>
+            </div>
+            <div class="next-btn-container"><span id="next-btn">Next > </span></div>
+        </div>
+        <p class="my-name">Made with ❤️ by Saket Ranjan</p>
+        
+        <audio id="game-audio" autoplay loop >
+            <source src="audio/Quiz audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="correct-answer" >
+            <source src="audio/correct Answer audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="wrong-answer" >
+            <source src="audio/Wrong Answer audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </div>
+</body>
+</html>
