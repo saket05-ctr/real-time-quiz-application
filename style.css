@@ -6,12 +6,9 @@ body{
 
 
 body.home-body{
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 
 }
 
@@ -30,8 +27,8 @@ body.second-body{
 
 
 .home-content {
-    max-width: 861px;
-    min-height: 358px;
+    /* max-width: 861px;
+    min-height: 358px; */
     padding: 50px;
     /* background-color: pink; */
     display: flex;
@@ -88,10 +85,6 @@ body.second-body{
 
 
 @media (max-width: 768px) {
-    .home-content img{
-        width: 100%;
-    
-}
 
     .home-content{
         padding: 36px;
@@ -114,7 +107,32 @@ body.second-body{
     .high-score{
         margin-top: 52px;
         font-size: 16px;
-}
+    }
+
+    /* .items{
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    
+     .categories-container{
+        max-width: 320px
+     }
+
+     .categories{
+        margin: 40px ;
+        display: grid;
+        grid-template-rows: 68px 68px ;
+        grid-template-columns: 80px 80px ;
+        gap: 20px;
+    } */
+
+    .categories-container{
+        /* max-width: 350px; */
+    }
 }
 
 
@@ -598,4 +616,69 @@ audio{
         font-size: 16px;
     }
 
+}
+
+
+
+/* .categories-container{
+    margin: 12px auto;
+} */
+
+.categories-container .select-category{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+.error{
+    font-size: 12px;
+    text-align: center;
+    color: red;
+    display: none;
+
+}
+.items{
+    background-color: #EFF5D2;
+    /* border: 2px solid; */
+    padding: 8px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.items.active{
+    border: 2px solid #C6D870;
+    /* background-color: #8FA31E; */
+}
+.categories{
+    margin: 40px ;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-rows: 68px 68px ;
+    grid-template-columns: 180px 180px ;
+    gap: 20px;
+}
+
+
+@media(max-width: 550px){
+    .categories{
+        margin: 20px ;
+
+        grid-template-rows: 48px 48px ;
+        grid-template-columns: 116px 116px ;
+        gap: 12px;
+    }
+    .categories-container .select-category{
+        font-size: 20px;
+    }
+    .items{
+        padding: 8px;
+        font-size: 12px;
+    }
+    .categories-container{
+        margin: 40px 0px;
+    }
 }
